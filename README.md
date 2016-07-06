@@ -4,3 +4,4 @@
 	- `unicode_literals`
 - `sys.path.append('..')`
 - `with as`
+- `pinyin_list.py`
