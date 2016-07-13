@@ -26,7 +26,10 @@
 				- 预言 path 一定是 list。
 		- Item
 			- `__init__`
-			- 
+	- dag.py
+		- 生成 pinyin_list_len 个 PrioritySet，去 DagParams 中根据 pinyin_list，按照 0 —— pinyin_list_len 的顺序，得到相应的汉字及其概率，然后将汉字和概率放到对应的 PrioritySet 中。
+		
 - example
 - 疑问
-	[x] priorityset.py 为什么会出现多个 capacity？
+	- [x] priorityset.py 为什么会出现多个 capacity？
+	- [] heapq.heappush(self.data, [score, Item(score, path)]) heapq 是根据谁来排序的？
